@@ -7,12 +7,12 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Nurslabs - Création d'Applications Mobiles Premium & SEO-First" },
+    { title: "Nûr Labs - Des applications pensées pour l'utilisateur" },
     { 
       name: "description", 
-      content: "Nurslabs construit des applications mobiles centrées sur l'utilisateur, performantes et optimisées pour le SEO, sans la frustration des apps modernes." 
+      content: "Nûr Labs construit des applications mobiles centrées sur l'utilisateur, performantes et optimisées, sans toute la frustration des apps modernes." 
     },
-    { property: "og:title", content: "Nurslabs - Applications Mobiles d'Excellence" },
+    { property: "og:title", content: "Nûr Labs - Des applications pensées pour l'utilisateur" },
     { property: "og:description", content: "Expertise en développement mobile, UX intuitive et SEO stratégique." },
     { property: "og:type", content: "website" },
   ];

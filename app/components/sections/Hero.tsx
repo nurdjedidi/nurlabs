@@ -1,4 +1,5 @@
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router";
 import { Button } from "~/components/ui/button";
 
 export function Hero() {
@@ -24,14 +25,18 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-16 duration-1000 delay-700">
-            <Button size="lg" className="rounded-full px-8 h-12 bg-brand-600 hover:bg-brand-700 text-white shadow-xl shadow-brand-500/20">
-              Découvrir nos Apps
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            <Link to="#apps">
+              <Button size="lg" className="rounded-full px-8 h-12 bg-brand-600 hover:bg-brand-700 text-white shadow-xl shadow-brand-500/20">
+                Découvrir nos Apps
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
 
-            <Button size="lg" variant="outline" className="rounded-full px-8 h-12 border-slate-200 dark:border-slate-800">
-              En savoir plus
-            </Button>
+            <Link to="/about">
+              <Button size="lg" variant="outline" className="rounded-full px-8 h-12 border-slate-200 dark:border-slate-800">
+                En savoir plus
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

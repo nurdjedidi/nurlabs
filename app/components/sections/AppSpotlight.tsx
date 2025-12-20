@@ -1,5 +1,6 @@
-import { Apple, PlayCircle } from "lucide-react";
+import { Apple, PlayCircle, ExternalLink } from "lucide-react";
 import { Button } from "~/components/ui/button";
+import { Link } from "react-router";
 
 export function AppSpotlight() {
   return (
@@ -18,14 +19,12 @@ export function AppSpotlight() {
               La plateforme ultime pour maîtriser votre nutrition. Design premium, algorithmes de pointe et absence totale de frustration.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-              <Button size="lg" className="rounded-2xl px-6 h-14 bg-white text-brand-600 hover:bg-slate-100 font-bold flex gap-3 shadow-xl">
-                <Apple className="w-6 h-6" />
-                <span>App Store</span>
-              </Button>
-              <Button size="lg" className="rounded-2xl px-6 h-14 bg-slate-900 text-white hover:bg-black font-bold flex gap-3 shadow-xl">
-                <PlayCircle className="w-6 h-6 text-brand-400" />
-                <span>Play Store</span>
-              </Button>
+              <Link to="https://wadiah.fit" target="_blank">
+                <Button size="lg" variant="outline" className="rounded-full px-8 h-12 border-slate-200 dark:border-slate-800">
+                  <ExternalLink className="w-4 h-4" />
+                  Consulter le site web
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="flex-1 relative flex justify-center animate-in fade-in slide-in-from-right-12 duration-1000 delay-500">
