@@ -16,8 +16,8 @@ export function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-            Je construit des applications mobile <br />
-            <span className="text-gradient">pensé pour les utilisateurs</span>
+            Je construis des applications mobiles <br />
+            <span className="text-gradient">pensées pour les utilisateurs</span>
           </h1>
 
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500">
